@@ -39,8 +39,7 @@ public class Baskets {
        double totalLength = 0;        // Сумма длин всех слов
 
        // Проходим по каждому товару
-       for (int i = 0; i < allItems.length; i++) {
-           String currentItem = allItems[i];
+       for (String currentItem : allItems) {
            int currentLength = currentItem.length();
 
            // 1. Ищем самое длинное слово
