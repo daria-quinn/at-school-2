@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Playlist {
     private final String name;
-    private final List<String> songs;
+    private final ArrayList<String> songs;
 
     //название плейлиста
     public Playlist(String name) {
@@ -42,8 +42,7 @@ public class Playlist {
      //получение названия песни по индексу
     public String getSong(int index) {
         if (index < 0 || index >= songs.size()) {
-            System.out.println("Ошибка: индекс " + index + " вне диапазона.");
-            return null;
+            return " Ошибка: индекс " + index + " вне диапазона";
         }
         String song = songs.get(index);
         System.out.println("Получена песня: " + song);
